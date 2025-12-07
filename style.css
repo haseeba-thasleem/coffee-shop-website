@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --btn-primary: #0d6efd;
+    --btn-secondary: #6610f2;
+    --light-blue: #0DCAF0;
+    --font-family-primary: "Merienda", cursive;
+    --font-family-secondary: "Nunito Sans", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-secondary);
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-family-secondary);
+}
+
+a:hover {
+    color: var(--btn-secondary);
+}
+
+/*nav*/
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: azure;
+      position: fixed;
+  top: 0;
+  width: 95%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+p {
+    font-family: var(--font-family-secondary);
+}
+
+
+
+#hero {
+    background-image: url(./images/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 370px;
+    background-position: center;
+    padding: 100px 20px;
+     margin-top: 50px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    padding: 60px 60px;
+
+}
+
+.heading {
+    font-family: var(--font-family-primary);
+    padding: 0%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sub-heading {
+    font-family: var(--font-family-primary);
+    padding: 0%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.titles {
+    font-family: var(--font-family-primary);
+    padding: 0%;
+    margin: auto;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content {
+    font-family: var(--font-family-secondary);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.blue-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-primary);
+    color: white;
+    font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+
+.blue-btn:hover {
+    background-color: var(--btn-secondary);
+}
+
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 60px;
+    border: 1px solid #ccc;
+}
+
+.about-img img {
+    height: auto;
+    width: 40vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.about-content {
+    padding: 20px;
+    background-color: #0DCAF0;
+    margin: 0px 10px 260px 10px;
+}
+
+.our-faculty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 60px;
+    border: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+.our-faculty img {
+    height: auto;
+    width: 250px;
+}
+
+.faculty-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px 60px;
+
+
+    align-items: center
+}
+
+.faculty-card,
+.menu-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 60px;
+
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 60px;
+}
+
+.gallery-card {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.gallery-card img {
+    height: auto;
+    width: 360px;
+}
+
+.team-card {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.team-card img {
+    height: auto;
+    width: 360px;
+}
+
+.team-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 60px;
+
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 60px;
+    justify-content: center;
+    border: 1px solid #ccc;
+
+}
+
+.contact-card {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.contact-card img {
+    height: auto;
+    width: 40vw;
+    padding: 10px;
+}
+
+input {
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 5px 20px;
+    width: 30vw;
+
+}
+
+.orange-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #CC9966;
+    font-family: var(--font-family-primary);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.book-table-card {
+    border: 2px solid black;
+    margin: 0px 10px 200px 10px;
+}
+
+form {
+    padding: 40px;
+}
+
+.black-card {
+    background-color: black;
+    height: 3px;
+    width: 60vw;
+}
+
+span {
+    font-weight: bold;
+    color: red;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* --------------- RESPONSIVE DESIGN --------------- */
+
+/* ---------- Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .hero-content {
+        width: 60%;
+        padding: 40px;
+    }
+
+    #about {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .about-img img {
+        width: 80vw;
+    }
+
+    .faculty-content,
+    .menu-content,
+    .gallery-content,
+    .team-content {
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    .contact-card img {
+        width: 80vw;
+    }
+}
+
+/* ---------- Mobile (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+    .hero-content {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .sub-heading {
+        font-size: 26px;
+    }
+
+    .titles {
+        font-size: 20px;
+    }
+
+    #about {
+        margin: 10px;
+    }
+
+    .faculty-content,
+    .menu-content,
+    .gallery-content,
+    .team-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card img,
+    .team-card img {
+        width: 90vw;
+    }
+
+    .contact-card img {
+        width: 90vw;
+    }
+
+    input {
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    #nav .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+/* ---------- Smaller Mobile (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .hero-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .blue-btn, .orange-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .gallery-card img,
+    .team-card img {
+        width: 100%;
+    }
+
+    input {
+        width: 90vw;
+    }
+}
+
+
+
+
+
